@@ -3,7 +3,7 @@ from pyimagesearch import imutils
 from scipy.spatial import distance as dist
 from skimage.filters import threshold_local
 from matplotlib.patches import Polygon
-import polygon_interacter as poly_i
+import poligono as poly_i
 import numpy as np
 import matplotlib.pyplot as plt
 import itertools
@@ -300,7 +300,7 @@ class DocScanner(object):
         # Mostrar imagen con sus respectivos filtros en background
         cv2.imshow("Original", imutils.resize(orig, height=400))
         cv2.imshow("Escaner", imutils.resize(sharpen, height=400))
-        cv2.imshow("Recortada", imutils.resize(warped, height=800))
+        cv2.imshow("Recortada", imutils.resize(warped, height=600))
         cv2.waitKey(0)
 
 
